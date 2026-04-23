@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <metadata>
+        <title>Student Registration Form</title>
+        <style>
+            body {
+                background: linear-gradient(rgb(7, 123, 255), rgb(255, 123, 145));
+                background-color: no-repeat;
+                background-attachment: fixed;
+            }
+            
+            form {
+                border: solid;
+                border-radius: 10px;
+                background-color: beige;
+                margin: 120px;
+            }
+            
+            label {
+                font-family: Arial, Helvetica, sans-serif;
+                color: blue;
+            }
+            
+            .button {
+                padding: 10px;
+                border-style: fixed;
+                border-color: black;
+                color: white;
+                background-color: rgb(7, 123, 255);
+            }
+            
+            .button:hover {
+                border-style: dashed;
+                border-color: white;
+            }
+        </style>
+        <link rel="stylesheet" href="MyWebsite.css">
+</head>
+
+<body>
+    <nav>
+        <header>
+            <h1>My First Website</h1>
+        </header>
+        <ul>
+            <a href="MyWebsite.html">
+                <li>Home</li>
+            </a>
+            <a href="About.html">
+                <li>About</li>
+            </a>
+            <a href="Contact.html">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </nav>
+    <form name="details" action="demo.php" method="post">
+        <label type="text">Name: </label>
+        <input type="text" name="fullname" placeholder="Full Name"><br><br>
+
+        <label type="email">Email: </label>
+        <input type="email" name="email" placeholder="name@gmail.com" required><br><br>
+
+        <label type="password">Password: </label>
+        <input type="password" name="password" required><br><br>
+
+        <label type="number">Age: </label>
+        <input type="number" name="age" min="17" max="99" maxlength="2"><br><br>
+
+        <label type="date">Date Of Birth: </label>
+        <input type="date" name="dob" required><br><br>
+
+        <label type="tel">Contact Number: </label>
+        <input type="tel" name="phone" placeholder="How to contact you" required maxlength="10"><br><br>
+
+        <label type="radio">Gender: </label>
+        <input type="radio" name="gender" required>Male<br><br>
+        <input type="radio" name="gender" required>Female<br><br>
+
+        <label type="checkbox">Skills/Interest: </label>
+        <input type="checkbox">HTML<br><br>
+        <input type="checkbox">CSS<br><br>
+        <input type="checkbox">Javascript<br><br>
+        <input type="checkbox">Python<br><br>
+
+        <label type="file">Upload Profile Picture: </label>
+        <input type="file" name="jpeg"><br><br>
+
+        <label type="range">Satisfaction Level: </label>
+        <input type="range" min="1" max="10"><br><br>
+
+        <label type="color">Favourite Colour: </label>
+        <input type="color"><br><br>
+
+        <label type="url">Portfolio Link: </label>
+        <input type="url" placeholder="Access to portfolio" required><br><br>
+
+        <input class="button" type="submit" value="DONE">
+        <input class="button" type="reset" value="Start Over">
+    </form>
+</body>
+
+</html>
